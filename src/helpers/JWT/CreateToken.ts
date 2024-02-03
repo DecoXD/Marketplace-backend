@@ -7,6 +7,7 @@ export async function CreateToken(userId:number | null) {
   const payload = {id:userId}
   try {
     
+    
     const token = jwt.sign(payload,secret)
     return token
   } catch (error) {

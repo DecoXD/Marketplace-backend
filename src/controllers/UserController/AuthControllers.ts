@@ -4,7 +4,7 @@ import {LoginData, RegisterData} from '../../interfaces/AuthInterfaces'
 import { User } from '../../models/User';
 import {genSaltSync,hashSync} from 'bcrypt'
 import { HttpError } from '../../errors/HttpError';
-import { FormValidate, LoginValidate, RegisterValidate } from '../../auth';
+import { FormValidate, LoginValidate, RegisterValidate } from '../../helpers/validations';
 import { CreateToken } from '../../helpers/JWT/CreateToken';
 
 
@@ -105,3 +105,4 @@ export async function login(req:Request,res:Response,next:NextFunction){
 
 
 } 
+

@@ -1,7 +1,7 @@
 import { Op } from "sequelize"
-import { User } from "../models/User"
-import { LoginData, UserLoginProtocol, RegisterData, UserRegisterProtocol} from "../interfaces/AuthInterfaces"
-import { HttpError } from "../errors/HttpError"
+import { User } from "../../models/User"
+import { LoginData, UserLoginProtocol, RegisterData, UserRegisterProtocol} from "../../interfaces/AuthInterfaces"
+import { HttpError } from "../../errors/HttpError"
 import { compareSync } from "bcrypt"
 
 

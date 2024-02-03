@@ -1,4 +1,4 @@
-import { HttpError } from "../errors/HttpError"
+import { HttpError } from "../../errors/HttpError"
 
 type UnknownObject = Record<string,any>
 
